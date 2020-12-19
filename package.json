@@ -1,0 +1,24 @@
+{
+  "name": "preact-template",
+  "author": "@garrettgreen",
+  "dependencies": {
+    "preact": "^10.5.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.0.5"
+  },
+  "description": "Starter for preact projects",
+  "eslintIgnore": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "clean": "rm dist/*",
+    "dev": "rm dist/*; yarn run build && yarn run start",
+    "start": "parcel src/index.html"
+  },
+  "version": "1.0.0"
+}
