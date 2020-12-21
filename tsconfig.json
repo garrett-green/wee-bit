@@ -1,17 +1,23 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "baseUrl": "src",
     "esModuleInterop": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "module": "ESNext",
+    "jsxFragmentFactory": "Fragment",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./dist",
+    "paths": {
+      "~*": ["./*"]
+    },
+    "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES5"
+    "target": "ES5",
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*.tsx", "src/**/*.ts", "./src/**/*"]
+  "include": ["src/server/**/*"]
 }
