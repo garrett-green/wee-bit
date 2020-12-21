@@ -21,11 +21,6 @@ header {
   padding: 0.5vh 1vw;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 h1 {
   color: var(--theme-navy);
   font-size: 2.5rem;
@@ -34,14 +29,12 @@ h1 {
   font-weight: 700;
 }
 
-main > p {
-  text-align: center;
+a {
+  text-decoration: none
 }
 
-.styled_text {
+main > p {
   text-align: center;
-  color: var(--theme-navy);
-  font-weight: bold;
 }
 
 form {
@@ -71,6 +64,17 @@ button {
   font-weight: 600;
   margin: 10px;
   padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.styled_text {
+  text-align: center;
+  color: var(--theme-navy);
+  font-weight: bold;
 }
 
 .loading {

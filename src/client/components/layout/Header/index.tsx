@@ -2,7 +2,9 @@ import { h } from 'preact';
 const Header = () => {
   return (
     <header>
-      <h1>Wee Bit</h1>
+      <h1>
+        <a href="/">Wee Bit</a>
+      </h1>
     </header>
   );
 };
