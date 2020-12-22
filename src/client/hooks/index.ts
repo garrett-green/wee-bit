@@ -1,24 +1,21 @@
 import axios from 'axios';
 import { useEffect, useState } from 'preact/hooks';
+import { Link } from '../types';
 
-interface Link {
-  shortURL: string;
-  URL: string;
-}
 const API_POST_ROUTE = '/api';
 
-interface HookState<T = unknown> {
-  data?: T;
+interface CreateWeeLinkHookState {
+  data?: Link;
   loading: boolean;
   error?: Error;
 }
 
-const initialState: HookState<Partial<Link>> = {
+const initialState: CreateWeeLinkHookState = {
   loading: false,
 };
 
 export function useCreateWeeLink(): [
-  HookState<Partial<Link>>,
+  CreateWeeLinkHookState,
   (URL: string) => void
 ] {
   const [state, setState] = useState(initialState);

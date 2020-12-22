@@ -1,11 +1,9 @@
 import { h, FunctionComponent, Fragment } from 'preact';
 import { useCreateWeeLink } from '../../../hooks';
 import InputURLForm from '../../InputURLForm';
-import PreviewURL from '../../Preview';
-interface Link {
-  shortURL: string;
-  URL: string;
-}
+import Confirmation from '../../Confirmation';
+import { Link } from '../../../types';
+
 const Main: FunctionComponent = () => {
   const [{ data, loading, error }, createWeeLink] = useCreateWeeLink();
 
@@ -20,7 +18,7 @@ const Main: FunctionComponent = () => {
   return (
     <main>
       {data ? (
-        <PreviewURL link={data as Link} />
+        <Confirmation link={data as Link} />
       ) : (
         <Fragment>
           <InputURLForm createLink={createWeeLink} />
