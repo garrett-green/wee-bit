@@ -9,9 +9,7 @@ export default () => {
         useUnifiedTopology: true,
         useCreateIndex: true,
       })
-      .then(() => {
-        return console.log(`Successfully connected to database`);
-      })
+      .then(() => {})
       .catch((error) => {
         console.log('Error connecting to database: ', error);
         return process.exit(1);

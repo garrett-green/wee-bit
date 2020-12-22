@@ -39,6 +39,7 @@ app.use('/api', router);
 connect();
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`LIVE ON PORT ${PORT}`);
-});
+app.listen(PORT);
+
+// exported for testing
+export default app;
