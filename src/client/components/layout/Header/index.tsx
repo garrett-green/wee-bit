@@ -1,5 +1,5 @@
-import { h } from 'preact';
-const Header = () => {
+import { FunctionComponent, h } from 'preact';
+const Header: FunctionComponent = () => {
   return (
     <header>
       <h1>
