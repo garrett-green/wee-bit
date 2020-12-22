@@ -8,7 +8,7 @@ interface InputURLFormProps {
 const InputURLForm: FunctionComponent<InputURLFormProps> = ({ createLink }) => {
   const [input, setInput] = useState<string>('');
 
-  const handleInput = ({ target }: InputEvent) => {
+  const handleInput = ({ target }: any) => {
     const inputValue = target.value as string;
 
     const URL = inputValue.startsWith('http')
@@ -17,7 +17,7 @@ const InputURLForm: FunctionComponent<InputURLFormProps> = ({ createLink }) => {
 
     setInput(URL);
   };
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     createLink(input);
   };

@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.3",
-    "@testing-library/preact": "^2.0.1",
     "@types/cors": "^2.8.9",
     "@types/express": "^4.17.9",
     "@types/jest": "^26.0.19",
@@ -39,7 +38,6 @@
   "license": "MIT",
   "main": "src/client/index.html",
   "jest": {
-    "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ]

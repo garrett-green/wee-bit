@@ -1,6 +1,6 @@
 import request from 'supertest';
 import app from '../../src/server';
-import { mockLinkModel, mockConnect, disconnect } from '../mocks';
+import { mockLinkModel } from '../mocks';
 
 const server = app.listen(3001);
 
