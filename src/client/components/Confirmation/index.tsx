@@ -1,5 +1,6 @@
 import { h, FunctionComponent, Fragment } from 'preact';
 import { Link } from '../../types';
+import LinkInfo from './LinkInfo';
 
 interface ConfirmationProps {
   link: Link;
@@ -10,17 +11,8 @@ const Confirmation: FunctionComponent<ConfirmationProps> = ({
 }) => {
   return (
     <Fragment>
-      <Fragment>
-        <p class="styled_text">Wee Link:</p>{' '}
-        <p>
-          <a href={window.location.href + shortURL} target="_blank">
-            {window.location.href + shortURL}
-          </a>
-        </p>
-      </Fragment>
-      <Fragment>
-        <p class="styled_text">Original URL/Destination:</p> <p>{URL}</p>
-      </Fragment>
+      <LinkInfo link={window.location.href + shortURL} text="Wee Link" />
+      <LinkInfo link={URL} text="Original URL/Destination" />
     </Fragment>
   );
 };
