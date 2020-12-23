@@ -3,4 +3,4 @@
 .vscode/
 dist/
 node_modules/
-firebaseServiceAccount.json
+coverage/

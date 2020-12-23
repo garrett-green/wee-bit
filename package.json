@@ -48,7 +48,8 @@
     "dev-server": "nodemon --config \"./util/nodemon.json\"/",
     "dev": "yarn run build-client; yarn run build-server; yarn run dev-server",
     "lint": "eslint",
-    "test": "jest"
+    "test": "jest",
+    "test-coverage": "yarn test --coverage --watch --runInBand"
   },
   "version": "1.0.0"
 }
